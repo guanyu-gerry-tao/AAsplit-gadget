@@ -5,6 +5,7 @@ Thumbs.db
 # data (keep folder and .gitkeep, ignore actual data files)
 data/*
 !data/.gitkeep
+!data/example.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

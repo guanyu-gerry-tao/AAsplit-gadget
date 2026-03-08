@@ -1,0 +1,10 @@
+date,item,amount,payer,participants,category,notes
+2025-07-01,Airport taxi,$68.00,Alice,"Alice, Bob, Charlie",Transport,From airport to hotel
+2025-07-01,Hotel check-in,$450.00,Bob,"Alice, Bob, Charlie",Accommodation,3 nights
+2025-07-01,Dinner at steakhouse,$126.50,Alice,"Alice, Bob, Charlie",Food,Welcome dinner
+2025-07-02,Museum tickets,$90.00,Charlie,"Alice, Bob, Charlie",Activity,National museum
+2025-07-02,Lunch,$55.00,Bob,"Bob, Charlie",Food,Alice had solo plans
+2025-07-02,Souvenir shop,$38.00,Alice,"Alice",Shopping,Personal purchase
+2025-07-03,Rental car,$160.00,Charlie,"Alice, Bob, Charlie",Transport,Day trip
+2025-07-03,Gas,-$22.00,Charlie,"Alice, Bob, Charlie",Transport,Refund from rental agency
+2025-07-03,Farewell dinner,$97.80,Bob,"Alice, Bob, Charlie",Food,Last night dinner
