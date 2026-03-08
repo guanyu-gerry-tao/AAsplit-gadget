@@ -2,8 +2,9 @@
 .DS_Store
 Thumbs.db
 
-# data
-data/
+# data (keep folder and .gitkeep, ignore actual data files)
+data/*
+!data/.gitkeep
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
