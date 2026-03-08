@@ -34,8 +34,12 @@ def _parse_amount(raw, row_num):
     if not s:
         return None, None  # empty row, skip
     s = s.replace(",", "")
+    # Handle $-prefix with optional leading sign: $100, -$100, +$100
+    # 处理$前缀，支持可选的正负号：$100, -$100, +$100
     if s.startswith("$"):
         s = s[1:]
+    elif s.startswith("-$") or s.startswith("+$"):
+        s = s[0] + s[2:]
     try:
         val = float(s)
         return val, None
