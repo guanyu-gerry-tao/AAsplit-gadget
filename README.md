@@ -67,7 +67,7 @@ python3 -m unittest test_split -v
 ## Setup
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/guanyu-gerry-tao/AAsplit-gadget.git
 cd AAsplit-gadget
 # Place your CSV in data/
 python3 split.py
