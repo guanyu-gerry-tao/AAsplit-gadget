@@ -15,7 +15,7 @@ Your CSV must have these three columns (other columns are ignored):
 
 | Column | Accepted Names | Format |
 |--------|---------------|--------|
-| Amount | `amount` or `金额` | Number or `$`-prefixed number (e.g. `100.50` or `$100.50`) |
+| Amount | `amount` or `金额` | Number or `$`-prefixed number, negative for refunds (e.g. `100.50`, `$100.50`, `-$40.00`) |
 | Payer | `payer`, `payor`, or `支付人` | Name of the person who paid |
 | Participants | `participants`, `split between`, `shared by`, or `参与人` | Comma-separated names wrapped in double quotes (e.g. `"Alice, Bob, Charlie"`) |
 
@@ -57,12 +57,14 @@ Fewer transfers overall.
 python3 -m unittest test_split -v
 ```
 
-35 test cases covering:
+49 test cases covering:
 - Column name auto-detection (Chinese & English)
-- Amount parsing and validation
+- Amount parsing and validation (including negative/refund amounts)
 - Participants format validation
 - CSV error handling
 - Both settlement algorithms
+- Algorithm invariants (no self-transfers, positive amounts, cross-mode balance consistency)
+- Realistic scenarios (rounding, 5-person trips, refunds, hand-verified balances)
 
 ## Setup
 
